@@ -24,10 +24,12 @@ header {
     background: rgba(0,0,0,0.8);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     position: fixed;
     left: 0px;
     right: 0px;
     top: 0px;
+    height: 65px;
 }
 
 header ul li {
@@ -40,8 +42,8 @@ header ul {
 
 header a {
     display: inline-block;
-    height: 50px;
-    line-height: 50px;
+    height: 65px;
+    line-height: 65px;
     color: #fff;
 }
 
@@ -56,7 +58,7 @@ header ul li a {
 }
 
 header h1 a {
-    font-size: 18px;
+    font-size: 25px;
     margin-left: 20px;
 }
 
@@ -255,9 +257,66 @@ footer .footer-bottom li a:hover {
     color: #fff;
 }
 
+#bar {
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    display: none;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    background-color: #212529;
+    color: #fff;
+    transform: translateX(-100%);
+    /* padding: 40px 0 0 30px; */
+    padding-top: 40px;
+}
+
+#header h1 a {
+    color: #fff;
+    font-size: 25px;
+    padding-left: 30px;
+}
+
+#header h1 {
+    margin-bottom: 30px;
+}
+
+#header li a {
+    color: #fff;
+    padding: 25px 30px;
+    display: block;
+}
+
+#header li a:hover {
+    background-color: #006f6a;
+}
+
+#close {
+    position: absolute;
+    top: .8rem;
+    right: 1.2rem;
+    font-size: 25px;
+}
+
+#overlay {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    display: none;
+}
+
 /* responsive web */
 @media screen and (max-width: 960px) {
-    header {
+    /* header {
         display: block;
         text-align: center;
         background-color: rgba(0, 0, 0, 0.7);
@@ -268,7 +327,22 @@ footer .footer-bottom li a:hover {
     }
     header ul {
         padding-bottom: 10px;
+    } */
+    /* -------------------------- */
+    header {
+        padding-left: 15px;
+        padding-right: 15px;
+        background-color: #000;
     }
+
+    #bar {
+        display: block;
+    }
+
+    header ul {
+        display: none;
+    }
+
     #content {
         padding: 0 10px;
     }
@@ -284,13 +358,17 @@ footer .footer-bottom li a:hover {
 }
 
 @media screen and (max-width: 500px) {
-    header h1 a{
+    /* header h1 a{
         font-size: 20px;
     }
     header ul li a {
         font-size: 12px;
         margin: 0 5px;
-    }
+    } */
+    /* -------------------------- */
+
+
+
     #slider {
         display: none;
     }
